@@ -1,0 +1,10 @@
+services:
+  rabbitmat_db:
+    image: postgres:latest
+    container_name: rabbitmat_db
+    environment:
+      - POSTGRES_DB=rabbitmat_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
